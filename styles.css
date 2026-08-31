@@ -1,0 +1,304 @@
+
+.hero-text > p:not(.small-heading) {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #d1d5db;
+}
+
+
+/* ------------------------------
+   BUTTON
+------------------------------ */
+
+.button {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #111827;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+
+/* ------------------------------
+   GENERAL SECTION
+------------------------------ */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    color: #111827;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #38bdf8;
+    margin: 10px auto;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+
+/* ------------------------------
+   ABOUT SECTION
+------------------------------ */
+
+.about-content {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.education {
+    flex: 1;
+    background-color: #f1f5f9;
+    padding: 30px;
+    border-left: 5px solid #38bdf8;
+    height: fit-content;
+}
+
+.education h3 {
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.education h4 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.education p {
+    margin-bottom: 8px;
+}
+
+
+/* ------------------------------
+   SKILLS SECTION
+------------------------------ */
+
+.skills-section {
+    background-color: #f8fafc;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 250px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-top: 4px solid #38bdf8;
+}
+
+.skill-card h3 {
+    color: #2563eb;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #666;
+}
+
+
+/* ------------------------------
+   PROJECT SECTION
+------------------------------ */
+
+.project-card {
+    max-width: 700px;
+    margin: auto;
+
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+
+    padding: 35px;
+
+    border-left: 5px solid #38bdf8;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.project-language {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+
+/* ------------------------------
+   GOALS SECTION
+------------------------------ */
+
+.goals {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.goals h2 {
+    font-size: 35px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.goals p {
+    max-width: 700px;
+    margin: auto;
+    color: #d1d5db;
+}
+
+.goals .quote {
+    margin-top: 25px;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+
+/* ------------------------------
+   CONTACT SECTION
+------------------------------ */
+
+.contact {
+    text-align: center;
+}
+
+.contact > p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #666;
+}
+
+.contact-details {
+    background-color: #f8fafc;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.contact-details p {
+    margin: 12px;
+}
+
+.contact-details a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   MOBILE RESPONSIVENESS
+------------------------------ */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
+}
